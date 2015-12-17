@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="guH-iY-1Wo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BF4-zf-jT4">
+                                <rect key="frame" x="108" y="84" width="158" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CEg-Ae-gB1">
+                                <rect key="frame" x="108" y="233" width="158" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSg-fD-gyQ">
+                                <rect key="frame" x="108" y="375" width="158" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBj-j0-j6b">
+                                <rect key="frame" x="42" y="531" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="红色"/>
+                                <connections>
+                                    <action selector="changeRedColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjO-m5-XPw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4F-e1-CCV">
+                                <rect key="frame" x="125" y="531" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="绿色"/>
+                                <connections>
+                                    <action selector="changeGreenColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iYV-75-tlM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjH-DL-MNY">
+                                <rect key="frame" x="228" y="531" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="蓝色"/>
+                                <connections>
+                                    <action selector="changeBlueColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uaJ-kH-HgU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNk-Ba-H7q">
+                                <rect key="frame" x="136" y="579" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="橘色"/>
+                                <connections>
+                                    <action selector="chageOrangecolor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ran-Es-lPe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="IS0-a2-hZc"/>
+                    <navigationItem key="navigationItem" id="WkP-cP-TTo">
+                        <barButtonItem key="rightBarButtonItem" title="跳转" id="nvZ-Vj-5Mx"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="faceImageView" destination="BF4-zf-jT4" id="jrM-55-dDX"/>
+                        <outlet property="heartImageView" destination="CEg-Ae-gB1" id="rin-sg-0Ww"/>
+                        <outlet property="rectImageView" destination="wSg-fD-gyQ" id="9Gl-18-e1P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4743.5" y="801.5"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="QjW-lg-B4D">
+            <objects>
+                <viewController id="Bac-sO-ckZ" customClass="TwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EGL-W0-35A"/>
+                        <viewControllerLayoutGuide type="bottom" id="ttf-qh-w8Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a21-hI-rsc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AuU-Lg-NM6">
+                                <rect key="frame" x="108" y="84" width="158" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mch-Io-hqM">
+                                <rect key="frame" x="108" y="233" width="158" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="de5-VO-veT">
+                                <rect key="frame" x="108" y="375" width="158" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmU-PZ-U3z">
+                                <rect key="frame" x="116" y="539" width="150" height="49"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="h88-Mz-16E"/>
+                    <navigationItem key="navigationItem" id="40f-Pj-HeS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="faceImageView" destination="AuU-Lg-NM6" id="q7S-aV-MOb"/>
+                        <outlet property="heartImageView" destination="mch-Io-hqM" id="2WV-WM-wog"/>
+                        <outlet property="rectImageView" destination="de5-VO-veT" id="mCC-Sn-wjE"/>
+                        <outlet property="testLabel" destination="rmU-PZ-U3z" id="YR7-Nt-uQP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ub8-c4-Sl8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4743.5" y="94.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5e3-wR-j49">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="guH-iY-1Wo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="55N-x4-wmx">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Bac-sO-ckZ" kind="relationship" relationship="viewControllers" id="NPX-q0-bhZ"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="FoJ-zN-q8z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p3E-OG-Oyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4044" y="448"/>
+        </scene>
+    </scenes>
+</document>
